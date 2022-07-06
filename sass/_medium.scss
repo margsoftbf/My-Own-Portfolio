@@ -1,1 +1,21 @@
-@media (min-width: 768px) {}
+@media (min-width: 768px) {
+	.background-icon {
+		&-one {
+			top: 18%;
+			animation: rotate-right 160s infinite linear;
+		}
+
+		&-two {
+			display: block;
+			right: 5%;
+			top: 44%;
+			animation: rotate-left 160s infinite linear;
+		}
+		&-three {
+			display: none;
+		}
+		&-four {
+			display: none;
+		}
+	}
+}

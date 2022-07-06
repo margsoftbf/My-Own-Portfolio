@@ -1,3 +1,47 @@
+@-webkit-keyframes rotate-right {
+  from {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes rotate-right {
+  from {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes rotate-left {
+  from {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  to {
+    -webkit-transform: rotate(-360deg);
+            transform: rotate(-360deg);
+  }
+}
+
+@keyframes rotate-left {
+  from {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  to {
+    -webkit-transform: rotate(-360deg);
+            transform: rotate(-360deg);
+  }
+}
+
 *,
 *::after,
 *::before {
@@ -15,7 +59,8 @@ html {
 body {
   font-family: 'Roboto Slab', serif;
   font-size: 1.6rem;
-  background-image: linear-gradient(110deg, #fdfbfb 0%, #d0d1d1 100%);
+  background-image: -webkit-gradient(linear, left top, right top, from(#eeecec), color-stop(120%, #949494));
+  background-image: linear-gradient(90deg, #eeecec 0%, #949494 120%);
 }
 
 a {
@@ -34,5 +79,87 @@ button {
 .wrapper {
   margin: 0 auto;
   max-width: 1200px;
+}
+
+.background-icons {
+  overflow: hidden;
+}
+
+.background-icon {
+  position: absolute;
+  top: 0;
+  width: 300px;
+  height: 300px;
+  display: block;
+  opacity: 0.15;
+  overflow: hidden;
+}
+
+.background-icon-one {
+  top: 18%;
+  -webkit-animation: rotate-right 160s infinite linear;
+          animation: rotate-right 160s infinite linear;
+}
+
+.background-icon-two {
+  display: none;
+}
+
+.background-icon-three {
+  display: none;
+}
+
+.background-icon-four {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .background-icon-one {
+    top: 18%;
+    -webkit-animation: rotate-right 160s infinite linear;
+            animation: rotate-right 160s infinite linear;
+  }
+  .background-icon-two {
+    display: block;
+    right: 5%;
+    top: 44%;
+    -webkit-animation: rotate-left 160s infinite linear;
+            animation: rotate-left 160s infinite linear;
+  }
+  .background-icon-three {
+    display: none;
+  }
+  .background-icon-four {
+    display: none;
+  }
+}
+
+@media (min-width: 992px) {
+  .background-icon-one {
+    top: 15%;
+    -webkit-animation: rotate-right 160s infinite linear;
+            animation: rotate-right 160s infinite linear;
+  }
+  .background-icon-two {
+    display: block;
+    right: 5%;
+    top: 34%;
+    -webkit-animation: rotate-left 160s infinite linear;
+            animation: rotate-left 160s infinite linear;
+  }
+  .background-icon-three {
+    display: block;
+    left: 10%;
+    top: 54%;
+    -webkit-animation: rotate-left 160s infinite linear;
+            animation: rotate-left 160s infinite linear;
+  }
+  .background-icon-four {
+    display: block;
+    right: 5%;
+    top: 74%;
+    -webkit-animation: rotate-right 160s infinite linear;
+            animation: rotate-right 160s infinite linear;
+  }
 }
 /*# sourceMappingURL=style.css.map */
