@@ -57,10 +57,11 @@ html {
 }
 
 body {
-  font-family: 'Roboto Slab', serif;
+  font-family: 'Poppins', sans-serif;
   font-size: 1.6rem;
   background-image: -webkit-gradient(linear, left top, right top, from(#eeecec), color-stop(120%, #949494));
   background-image: linear-gradient(90deg, #eeecec 0%, #949494 120%);
+  overflow: hidden;
 }
 
 a {
@@ -111,6 +112,59 @@ button {
 
 .background-icon-four {
   display: none;
+}
+
+.header {
+  width: 100%;
+  background-color: #fff;
+  overflow: hidden;
+}
+
+.profile {
+  margin: 0.5em;
+}
+
+.profile__title {
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+.profile__dynamic {
+  font-size: 1.3rem;
+  color: #416347;
+  overflow: hidden;
+}
+
+.nav-items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 100%;
+  margin: 0.3em 0;
+}
+
+.nav-items a {
+  color: #000;
+  -webkit-transition: color 0.3s;
+  transition: color 0.3s;
+}
+
+.nav-items a:hover {
+  color: #416347;
+}
+
+.nav-items i {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 @media (min-width: 768px) {

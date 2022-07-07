@@ -7,29 +7,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Marcin Garski - Portfolio</title>
     <link rel="shortcut icon" type="image/png" href="./img/favicon.png" />
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
     <script src="https://kit.fontawesome.com/7b4480fb9a.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
     <div class="background-icons">
-        <img src="./img/icons/square.svg" alt="" class="background-icon background-icon-one">
-        <img src="./img/icons/command.svg" alt="" class="background-icon background-icon-two">
-        <img src="./img/icons/x.svg" alt="" class="background-icon background-icon-three">
-        <img src="./img/icons/message-square.svg" alt="" class="background-icon background-icon-four">
+        <img src="./img/icons/background/square.svg" alt="" class="background-icon background-icon-one">
+        <img src="./img/icons/background/command.svg" alt="" class="background-icon background-icon-two">
+        <img src="./img/icons/background/x.svg" alt="" class="background-icon background-icon-three">
+        <img src="./img/icons/background/message-square.svg" alt="" class="background-icon background-icon-four">
     </div>
-    <header>
-        <i class="fa-solid fa-user">About</i>
-        <i class="fa-solid fa-address-card">Resume/Experience/Education</i>
-        <i class="fa-solid fa-brain">Skills</i>
-        <i class="fa-solid fa-paintbrush">Works/Portfolio</i>
-        <i class="fa-solid fa-at">Contact</i>
+    <header class="header">
+        <div class="wrapper">
+            <div class="profile">
+                <h2 class="profile__title">Marcin Garski</h2>
+                <div class="profile__dynamic">
+                    <span class="auto-type"></span>
+                    <span class="auto-type"></span>
+                    <span class="auto-type"></span>
+                </div>
+            </div>
+            <nav class="nav">
+                <div class="nav-items">
+                    <a href="#about"><i class="fa-solid fa-user"></i>About</a>
+                    <a href="#resume"><i class="fa-solid fa-address-card"></i>Resume</a>
+                    <a href="#skills"><i class="fa-solid fa-brain"></i>Skills</a>
+                    <a href="#portfolio"><i class="fa-solid fa-paintbrush"></i>Portfolio</a>
+                    <a href="#contact"><i class="fa-solid fa-at"></i>Contact</a>
+                </div>
+            </nav>
+        </div>
     </header>
     <main>
 
     </main>
 
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <script src="./js/main.js"></script>
 </body>
 

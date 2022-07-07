@@ -15,9 +15,10 @@ html {
 }
 
 body {
-	font-family: 'Roboto Slab', serif;
+	font-family: 'Poppins', sans-serif;
 	font-size: 1.6rem;
 	background-image: linear-gradient(90deg, #eeecec 0%, #949494 120%);
+	overflow: hidden;
 }
 
 a {
@@ -61,6 +62,48 @@ button {
 	}
 	&-four {
 		display: none;
+	}
+}
+
+.header {
+	width: 100%;
+	background-color: $white;
+	overflow: hidden;
+}
+
+.profile {
+	margin: 0.5em;
+	&__title {
+		font-size: 1.5rem;
+		font-weight: 400;
+	}
+
+	&__dynamic {
+		font-size: 1.3rem;
+		color: $primary-color;
+		overflow: hidden;
+	}
+}
+
+.nav-items {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	max-width: 100%;
+	margin: 0.3em 0;
+
+	a {
+		color: #000;
+		transition: color 0.3s;
+
+		&:hover {
+			color: $primary-color;
+		}
+	}
+
+	i {
+		display: flex;
+		justify-content: center;
 	}
 }
 
