@@ -18,4 +18,51 @@
 			display: none;
 		}
 	}
+
+	.header {
+		display: none;
+	}
+
+	.container {
+		position: relative;
+		max-width: 580px;
+		margin: 0 auto;
+		height: 100vh;
+		background-color: #333;
+	}
+	.nav-desktop {
+		position: absolute;
+		left: -95px;
+		display: flex;
+	}
+
+	.nav-items {
+		position: absolute;
+		display: flex;
+		justify-content: space-around;
+		flex-direction: column;
+		height: 280px;
+		left: 0;
+		width: 80px;
+		background-color: $white;
+		margin: 0.5em;
+		padding: 0.7em;
+		border-radius: 10px;
+		border-top: 1px solid rgba(0, 0, 0, 0.2);
+		z-index: 100;
+
+		.nav-item {
+			font-size: 1.5rem;
+		}
+	}
+	.about {
+		position: relative;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		// background-color: #333;
+		width: 580px;
+		height: 60vh;
+		z-index: 10;
+	}
 }
