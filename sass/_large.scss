@@ -1,32 +1,7 @@
 @media (min-width: 992px) {
-	.background-icon {
-		&-one {
-			top: 15%;
-			animation: rotate-right 160s infinite linear;
-		}
-
-		&-two {
-			display: block;
-			right: 5%;
-			top: 34%;
-			animation: rotate-left 160s infinite linear;
-		}
-		&-three {
-			display: block;
-			left: 10%;
-			top: 54%;
-			animation: rotate-left 160s infinite linear;
-		}
-		&-four {
-			display: block;
-			right: 5%;
-			top: 74%;
-			animation: rotate-right 160s infinite linear;
-		}
-	}
 
 	.container {
-		max-width: 720px;
+		max-width: 680px;
 	}
 
 	.about {

@@ -18,7 +18,6 @@ body {
 	font-family: 'Poppins', sans-serif;
 	font-size: 1.6rem;
 	background-image: linear-gradient(90deg, #adadad 0%, #707070 120%);
-	overflow: hidden;
 }
 
 a {
@@ -50,8 +49,7 @@ button {
 	overflow: hidden;
 
 	&-one {
-		top: 18%;
-		animation: rotate-right 160s infinite linear;
+		display: none;
 	}
 
 	&-two {
@@ -82,20 +80,22 @@ button {
 	&__dynamic {
 		font-size: 1.3rem;
 		color: $primary-color;
-		overflow: hidden;
 	}
 }
 .nav-desktop {
 	display: none;
 }
+
 .nav-items {
-	position: fixed;
+	position: sticky;
+	top: 0;
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
 	background-color: $white;
 	width: 100%;
 	border-top: 1px solid rgba(0, 0, 0, 0.2);
+	z-index: 100;
 
 	.nav-item {
 		position: relative;
@@ -119,7 +119,85 @@ button {
 	}
 }
 
+.profile-section {
+	position: relative;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	background-color: #fff;
+	height: 550px;
 
+	&__background {
+		position: relative;
+		height: 250px;
+		width: 100%;
+	}
+
+	&__photo {
+		position: absolute;
+		top: 175px;
+		width: 150px;
+		height: 150px;
+		object-fit: cover;
+		border-radius: 50%;
+		border: 3px solid $primary-color;
+	}
+
+	&__title {
+		position: relative;
+		top: 80px;
+		font-size: 4rem;
+		font-weight: lighter;
+	}
+
+	&__dynamic {
+		position: relative;
+		top: 80px;
+		color: $primary-color;
+	}
+
+	&__socials {
+		position: relative;
+		top: 100px;
+
+		.social-item {
+			margin-right: 5px;
+			color: #000;
+			font-size: 1.8rem;
+			transition: color 0.3s;
+			margin: 0.3em;
+			padding: 0.2em;
+
+			&:hover {
+				color: $primary-color;
+			}
+		}
+
+		&::after {
+			position: absolute;
+			content: '';
+			margin: 3em auto;
+			left: 0px;
+			width: calc(100%);
+			height: 1px;
+			background-color: $dark-gray;
+		}
+	}
+
+	&__download {
+		position: relative;
+		top: 130px;
+		color: #000;
+		transition: color 0.3s;
+
+		i {
+			margin-left: 10px;
+		}
+		&:hover {
+			color: $primary-color;
+		}
+	}
+}
 
 @import './small';
 @import './medium';
