@@ -126,6 +126,7 @@ button {
 	flex-direction: column;
 	background-color: #fff;
 	height: 550px;
+	margin-bottom: 1em;
 
 	&__background {
 		position: relative;
@@ -195,6 +196,91 @@ button {
 		}
 		&:hover {
 			color: $primary-color;
+		}
+	}
+}
+
+.section-title {
+	position: relative;
+	font-size: 2rem;
+	font-weight: 400;
+	width: fit-content;
+
+	span {
+		font-weight: 600;
+		color: $primary-color;
+	}
+
+	&::after {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 100%;
+		height: 2px;
+		background-color: $dark-gray;
+		content: '';
+	}
+}
+
+.about {
+	padding: 1em;
+	width: 100%;
+	height: 100%;
+	background-color: #fff;
+
+	&__description {
+		font-size: 1.4rem;
+		margin: 1em 0;
+	}
+
+	&-section {
+		margin-top: 2em;
+
+		&__title {
+			display: flex;
+			align-items: center;
+			font-size: 2rem;
+			font-weight: 500;
+			margin-bottom: 0.7em;
+
+			i {
+				color: $primary-color;
+				margin-right: 5px;
+			}
+		}
+
+		&__boxes {
+			.about-section__box {
+				position: relative;
+				.box__year {
+					position: relative;
+					font-size: 1.4rem;
+					padding: 0.2em;
+					border: 2px solid $dark-gray;
+					color: $dark-gray;
+				}
+
+				.present {
+					border: 2px solid $primary-color;
+					color: $primary-color;
+				}
+
+				.box__title {
+					color: #000;
+					font-size: 1.8rem;
+					margin-top: 0.3em;
+				}
+
+				.box__subtitle {
+					color: $light-gray;
+					font-size: 1.5rem;
+				}
+
+				.box__desc {
+					margin: 0.5em 0 2em 0;
+					font-size: 1.3rem;
+				}
+			}
 		}
 	}
 }

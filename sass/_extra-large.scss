@@ -5,6 +5,37 @@
 		height: 100vh;
 	}
 
+	.nav-desktop {
+		top: calc(50% - 175px);
+	}
+	.background-icon {
+		&-one {
+			display: block;
+			left: 10%;
+			top: 15%;
+			animation: rotate-right 100s infinite linear;
+		}
+
+		&-two {
+			display: block;
+			right: 5%;
+			top: 34%;
+			animation: rotate-left 100s infinite linear;
+		}
+		&-three {
+			display: block;
+			left: 10%;
+			top: 44%;
+			animation: rotate-left 100s infinite linear;
+		}
+		&-four {
+			display: block;
+			right: 10%;
+			top: 64%;
+			animation: rotate-right 100s infinite linear;
+		}
+	}
+
 	main {
 		position: relative;
 		max-width: 1100px;
@@ -20,6 +51,7 @@
 		grid-column: 1/7;
 		grid-row: 1/8;
 		height: 700px;
+		margin: 0;
 
 		&__background {
 			height: 300px;
@@ -50,38 +82,19 @@
 		}
 
 		&__download {
+			font-size: 1.8rem;
 			top: 220px;
 		}
 	}
 
-	.nav-desktop {
-		top: calc(50% - 175px);
-	}
-	.background-icon {
-		&-one {
-			display: block;
-			left: 10%;
-			top: 15%;
-			animation: rotate-right 100s infinite linear;
-		}
-
-		&-two {
-			display: block;
-			right: 5%;
-			top: 34%;
-			animation: rotate-left 100s infinite linear;
-		}
-		&-three {
-			display: block;
-			left: 10%;
-			top: 44%;
-			animation: rotate-left 100s infinite linear;
-		}
-		&-four {
-			display: block;
-			right: 10%;
-			top: 64%;
-			animation: rotate-right 100s infinite linear;
-		}
+	.about {
+		position: relative;
+		display: grid;
+		grid-column: 7/12;
+		grid-row: 1/8;
+		height: 650px;
+		top: 25px;
+		border-bottom-right-radius: 5px;
+		border-top-right-radius: 5px;
 	}
 }
