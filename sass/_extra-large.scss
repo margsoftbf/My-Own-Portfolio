@@ -21,7 +21,7 @@
 	}
 
 	.profile-section {
-		grid-column: 1/7;
+		grid-column: 1/6;
 		grid-row: 1/8;
 		height: 700px;
 		margin: 0;
@@ -63,10 +63,11 @@
 	.about {
 		position: relative;
 		display: grid;
-		grid-column: 7/12;
+		grid-column: 6/12;
 		grid-row: 1/8;
-		height: 650px;
 		top: 25px;
+		height: 650px;
+		overflow-y: auto;
 		border-bottom-right-radius: 5px;
 		border-top-right-radius: 5px;
 	}
