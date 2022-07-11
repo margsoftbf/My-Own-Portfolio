@@ -8,33 +8,6 @@
 	.nav-desktop {
 		top: calc(50% - 175px);
 	}
-	.background-icon {
-		&-one {
-			display: block;
-			left: 10%;
-			top: 15%;
-			animation: rotate-right 100s infinite linear;
-		}
-
-		&-two {
-			display: block;
-			right: 5%;
-			top: 34%;
-			animation: rotate-left 100s infinite linear;
-		}
-		&-three {
-			display: block;
-			left: 10%;
-			top: 44%;
-			animation: rotate-left 100s infinite linear;
-		}
-		&-four {
-			display: block;
-			right: 10%;
-			top: 64%;
-			animation: rotate-right 100s infinite linear;
-		}
-	}
 
 	main {
 		position: relative;

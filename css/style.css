@@ -61,6 +61,7 @@ body {
   font-size: 1.6rem;
   background-image: -webkit-gradient(linear, left top, right top, from(#adadad), color-stop(120%, #707070));
   background-image: linear-gradient(90deg, #adadad 0%, #707070 120%);
+  overflow-x: hidden;
 }
 
 a {
@@ -81,55 +82,9 @@ button {
   max-width: 1200px;
 }
 
-.background-icons {
-  overflow: hidden;
-}
-
-.background-icon {
-  position: absolute;
-  top: 0;
-  width: 300px;
-  height: 300px;
-  display: block;
-  opacity: 0.15;
-  overflow: hidden;
-}
-
-.background-icon-one {
-  display: none;
-}
-
-.background-icon-two {
-  display: none;
-}
-
-.background-icon-three {
-  display: none;
-}
-
-.background-icon-four {
-  display: none;
-}
-
 .header {
   width: 100%;
-  height: 100px;
   background-color: #fff;
-  overflow: hidden;
-}
-
-.profile {
-  margin: 0.5em;
-}
-
-.profile__title {
-  font-size: 1.5rem;
-  font-weight: 400;
-}
-
-.profile__dynamic {
-  font-size: 1.3rem;
-  color: #416347;
 }
 
 .nav-desktop {
@@ -137,8 +92,7 @@ button {
 }
 
 .nav-items {
-  position: -webkit-sticky;
-  position: sticky;
+  position: fixed;
   top: 0;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -150,6 +104,7 @@ button {
           align-items: center;
   background-color: #fff;
   width: 100%;
+  height: 50px;
   border-top: 1px solid rgba(0, 0, 0, 0.2);
   z-index: 100;
 }
@@ -451,34 +406,6 @@ button {
   }
   .nav-desktop {
     top: calc(50% - 175px);
-  }
-  .background-icon-one {
-    display: block;
-    left: 10%;
-    top: 15%;
-    -webkit-animation: rotate-right 100s infinite linear;
-            animation: rotate-right 100s infinite linear;
-  }
-  .background-icon-two {
-    display: block;
-    right: 5%;
-    top: 34%;
-    -webkit-animation: rotate-left 100s infinite linear;
-            animation: rotate-left 100s infinite linear;
-  }
-  .background-icon-three {
-    display: block;
-    left: 10%;
-    top: 44%;
-    -webkit-animation: rotate-left 100s infinite linear;
-            animation: rotate-left 100s infinite linear;
-  }
-  .background-icon-four {
-    display: block;
-    right: 10%;
-    top: 64%;
-    -webkit-animation: rotate-right 100s infinite linear;
-            animation: rotate-right 100s infinite linear;
   }
   main {
     position: relative;
