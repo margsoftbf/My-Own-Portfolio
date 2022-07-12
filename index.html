@@ -10,7 +10,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,700;1,400;1,700&display=swap"
         rel="stylesheet">
-    <script src="https://kit.fontawesome.com/7b4480fb9a.js" crossorigin="anonymous"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
 </head>
 
@@ -57,25 +57,30 @@
                 <a class="profile-section__download" href="./files/Marcin Garski_resume.docx">DOWNLOAD CV<i
                         class="fa-solid fa-cloud-arrow-down"></i></a>
             </section>
-            <section class="about" id="about">
+            <section class="about section show" id="about">
                 <h2 class="section-title"><span>A</span>bout Me</h2>
                 <p class="about__description">
                     My name is Marcin Garski. I live in Garfield, NJ. I've always been interested in technology.
                     Additionally, I am also interested in sport, especially football.</p>
-                <p class="about__description">Hard-working and detail-oriented professional with a solid background in
-                    client services, combined with continuous self-study in web development. Operates as a dedicated
-                    service provider, going above and beyond to fulfill dynamic customer orders. Consistently evolves
+                <p class="about__description">Hard-working and detail-oriented professional with a solid
+                    background in
+                    client services, combined with continuous self-study in web development. Operates as a
+                    dedicated
+                    service provider, going above and beyond to fulfill dynamic customer orders. Consistently
+                    evolves
                     technical skills and experiences to further elevate value to the organization.</p>
                 <div class="about-section">
                     <div class="about-section__experience">
-                        <h3 class="about-section__title"><i class="fa-solid fa-briefcase"></i>Experience</h3>
+                        <h3 class="subsection__title"><i class="fa-solid fa-briefcase"></i>Experience</h3>
                         <div class="about-section__boxes">
                             <div class="about-section__box">
                                 <span class="box__year present">Jun. 2019 - Present</span>
                                 <p class="box__title">E-commerce Specialist</p>
                                 <p class="box__subtitle">A&J Vacuum Services</p>
-                                <p class="box__desc">Manages and actively optimizes eCommerce operations to promote
-                                    offerings for this vacuum service provider. Utilizes industry-best optimization
+                                <p class="box__desc">Manages and actively optimizes eCommerce operations to
+                                    promote
+                                    offerings for this vacuum service provider. Utilizes industry-best
+                                    optimization
                                     techniques to bolster the website’s Google ranking.</p>
                             </div>
                             <div class="about-section__box">
@@ -83,16 +88,83 @@
                                 <p class="box__title">Machine Operator</p>
                                 <p class="box__subtitle">Precision Custom Coatings</p>
                                 <p class="box__desc">Performed duties involving operation, maintenance, and
-                                    configuration of machines utilized for accomplishing custom coating orders.</p>
+                                    configuration of machines utilized for accomplishing custom coating orders.
+                                </p>
                             </div>
                             <div class="about-section__box">
                                 <span class="box__year">Aug. 2012 - May 2015</span>
                                 <p class="box__title">Call Center Operator</p>
                                 <p class="box__subtitle">Solid Security</p>
-                                <p class="box__desc">Handled outbound calls for customers to inform alarm activation
+                                <p class="box__desc">Handled outbound calls for customers to inform alarm
+                                    activation
                                     instances as reported by Solid Security’s managed services.</p>
                             </div>
                         </div>
+                    </div>
+                    <div class="about-section__education">
+                        <h3 class="subsection__title"><i class="fa-solid fa-graduation-cap"></i>Education
+                        </h3>
+                        <div class="about-section__boxes">
+                            <div class="about-section__box">
+                                <span class="box__year present">Present</span>
+                                <p class="box__title">Web Development Studies</p>
+                                <p class="box__subtitle">Online Programs</p>
+                                <p class="box__desc">Continually expands technical knowledge in Web Development
+                                    through
+                                    online programs. </p>
+                            </div>
+                            <div class="about-section__box">
+                                <span class="box__year">May 2012</span>
+                                <p class="box__title">High School Diploma</p>
+                                <p class="box__subtitle">Katowice, Poland</p>
+                                <p class="box__desc">Specialization: IT Technician Designation, Specialization
+                                    in
+                                    Graphics</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="skills section" id="skills">
+                <h2 class="section-title"><span>S</span>kills</h2>
+                <div class="skills__boxes">
+                    <div class="skills__box">
+                        <h3 class="subsection__title"><i class="fa-solid fa-laptop-code"></i>IT Skills</h3>
+                        <p class="skills__box--item"><i class="fa-solid fa-check"></i>HTML</p>
+                        <p class="skills__box--item"><i class="fa-solid fa-check"></i>CSS</p>
+                        <p class="skills__box--item"><i class="fa-solid fa-check"></i>JavaScript</p>
+                        <p class="skills__box--item"><i class="fa-solid fa-check"></i>React</p>
+                        <p class="skills__box--item"><i class="fa-solid fa-check"></i>Firebase</p>
+                        <p class="skills__box--item"><i class="fa-solid fa-check"></i>NPM</p>
+                        <p class="skills__box--item"><i class="fa-solid fa-check"></i>Adobe Photoshop</p>
+                        <p class="skills__box--item"><i class="fa-solid fa-check"></i>Git</p>
+                        <p class="skills__box--item"><i class="fa-solid fa-check"></i>SASS</p>
+                        <p class="skills__box--item"><i class="fa-solid fa-check"></i>Bootstrap</p>
+                        <p class="skills__box--item"><i class="fa-solid fa-check"></i>Figma</p>
+                        <p class="skills__box--item"><i class="fa-solid fa-check"></i>BEM</p>
+                    </div>
+                    <div class="skills__box">
+                        <h3 class="subsection__title"><i class="fa-solid fa-hourglass"></i>Ongoing education</h3>
+                        <p class="skills__box--item"><i class="fa-solid fa-check"></i>Typescript</p>
+                        <p class="skills__box--item"><i class="fa-solid fa-check"></i>Node</p>
+                        <p class="skills__box--item"><i class="fa-solid fa-check"></i>Express</p>
+                        <p class="skills__box--item"><i class="fa-solid fa-check"></i>MongoDB</p>
+                        <p class="skills__box--item"><i class="fa-solid fa-check"></i>Webpack</p>
+                        <p class="skills__box--item"><i class="fa-solid fa-check"></i>Tailwind CSS</p>
+                    </div>
+                    <div class="skills__box">
+                        <h3 class="subsection__title"><i class="fa-solid fa-language"></i>Language</h3>
+                        <p class="skills__box--item"><i class="fa-solid fa-check"></i>English</p>
+                        <p class="skills__box--item"><i class="fa-solid fa-check"></i>Polish</p>
+                    </div>
+                    <div class="skills__box">
+                        <h3 class="subsection__title"><i class="fa-solid fa-user-large"></i>Interpersonal/Knowledge</h3>
+                        <p class="skills__box--item"><i class="fa-solid fa-check"></i>Communication</p>
+                        <p class="skills__box--item"><i class="fa-solid fa-check"></i>Solving the problem</p>
+                        <p class="skills__box--item"><i class="fa-solid fa-check"></i>Cooperation with other</p>
+                        <p class="skills__box--item"><i class="fa-solid fa-check"></i>Website Hosting</p>
+                        <p class="skills__box--item"><i class="fa-solid fa-check"></i>Hosting Installation</p>
+                        <p class="skills__box--item"><i class="fa-solid fa-check"></i>SEO Optimize</p>
                     </div>
                 </div>
             </section>
@@ -100,8 +172,20 @@
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="https://kit.fontawesome.com/7b4480fb9a.js" crossorigin="anonymous"></script>
     <script src="./js/main.js"></script>
     <script src="./js/typed.js"></script>
+    <script src="./js/slider.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+
+            startEvent: 'DOMContentLoaded',
+            offset: 200,
+            once: true
+
+        });
+    </script>
 </body>
 
 </html>

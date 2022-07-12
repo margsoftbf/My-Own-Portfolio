@@ -1,16 +1,20 @@
-const allNavItem = document.querySelectorAll('.nav-item')
+const sections = document.querySelectorAll('.section');
+const navItems = document.querySelectorAll('.nav-item');
 
+navItems.forEach(navItem => {
+    navItem.addEventListener('click', function (e) {
+        e.preventDefault();
 
-function removeActiveMenu() {
-    allNavItem.forEach(item => {
-        item.classList.remove('active')
-    })
-}
+        navItems.forEach(
+            item => item.classList.remove('active')
+        );
+        sections.forEach(
+            section => section.classList.remove('show')
+        );
 
-allNavItem.forEach(item => {
-    item.addEventListener('click', () => {
-        removeActiveMenu()
-        item.classList.add('active')
-    })
-})
+        this.classList.add('active');
 
+        const target = this.getAttribute('href');
+        document.querySelector(target)?.classList.add('show');
+    });
+});
