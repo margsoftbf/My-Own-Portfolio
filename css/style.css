@@ -384,9 +384,23 @@ button {
   background-color: #fff;
 }
 
+.portfolio__box {
+  margin: 4em 0;
+}
+
 .portfolio__upper--img {
-  width: 100%;
-  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 auto;
+  max-width: 400px;
+  max-height: 400px;
 }
 
 .portfolio__upper--desc {
@@ -408,6 +422,47 @@ button {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+
+.portfolio__down--link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0.5em;
+  border-radius: 5px;
+  width: 120px;
+  color: #fff;
+  margin: 0.5em 0;
+}
+
+.portfolio__down--link i {
+  margin-right: 5px;
+}
+
+.portfolio__down .github {
+  background-color: #000;
+  -webkit-transition: background-color 0.3s;
+  transition: background-color 0.3s;
+}
+
+.portfolio__down .github:hover {
+  background-color: #252525;
+}
+
+.portfolio__down .live {
+  background-color: #006eff;
+  -webkit-transition: background-color 0.3s;
+  transition: background-color 0.3s;
+}
+
+.portfolio__down .live:hover {
+  background-color: #0055c4;
 }
 
 @media (min-width: 576px) {
@@ -484,6 +539,15 @@ button {
   }
   .section {
     border-radius: 5px;
+  }
+  .portfolio__down {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .portfolio__down--link {
+    margin: 0 1em;
   }
 }
 

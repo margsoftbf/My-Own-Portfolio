@@ -58,4 +58,12 @@
 	.section {
 		border-radius: 5px;
 	}
+
+	.portfolio__down {
+		flex-direction: row;
+
+		&--link {
+			margin: 0 1em;
+		}
+	}
 }
