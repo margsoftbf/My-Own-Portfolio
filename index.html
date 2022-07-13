@@ -183,9 +183,8 @@
                             <a class="portfolio__down--link github"
                                 href="https://github.com/margsoftbf/My-Own-Portfolio" target="_blank"><i
                                     class="fa-brands fa-github"></i>GITHUB</a>
-                            <a class="portfolio__down--link live"
-                                href="https://margsoftbf.github.io/My-Own-Portfolio/" target="_blank"><i
-                                    class="fa-solid fa-file"></i>LIVE</a>
+                            <a class="portfolio__down--link live" href="https://margsoftbf.github.io/My-Own-Portfolio/"
+                                target="_blank"><i class="fa-solid fa-file"></i>LIVE</a>
                         </div>
                     </div>
                     <div class="portfolio__box">
@@ -198,11 +197,10 @@
                                 Bill splitter, BMI Calculator, Calculator, Currency Converter.</p>
                         </div>
                         <div class="portfolio__down">
-                            <a class="portfolio__down--link github"
-                                href="https://github.com/margsoftbf/Multitask-App" target="_blank"><i
-                                    class="fa-brands fa-github"></i>GITHUB</a>
-                            <a class="portfolio__down--link live" href="https://margsoftbf.github.io/Multitask-App/" target="_blank"><i
-                                    class="fa-solid fa-file"></i>LIVE</a>
+                            <a class="portfolio__down--link github" href="https://github.com/margsoftbf/Multitask-App"
+                                target="_blank"><i class="fa-brands fa-github"></i>GITHUB</a>
+                            <a class="portfolio__down--link live" href="https://margsoftbf.github.io/Multitask-App/"
+                                target="_blank"><i class="fa-solid fa-file"></i>LIVE</a>
                         </div>
                     </div>
                     <div class="portfolio__box">
@@ -215,13 +213,43 @@
                         </div>
                         <div class="portfolio__down">
                             <a class="portfolio__down--link github"
-                                href="https://github.com/margsoftbf/Energyo-Green-Renewable-Energy-Landing-Page" target="_blank"><i
-                                    class="fa-brands fa-github"></i>GITHUB</a>
+                                href="https://github.com/margsoftbf/Energyo-Green-Renewable-Energy-Landing-Page"
+                                target="_blank"><i class="fa-brands fa-github"></i>GITHUB</a>
                             <a class="portfolio__down--link live"
-                                href="https://margsoftbf.github.io/Energyo-Green-Renewable-Energy-Landing-Page/index.html" target="_blank"><i
-                                    class="fa-solid fa-file"></i>LIVE</a>
+                                href="https://margsoftbf.github.io/Energyo-Green-Renewable-Energy-Landing-Page/index.html"
+                                target="_blank"><i class="fa-solid fa-file"></i>LIVE</a>
                         </div>
                     </div>
+                </div>
+            </section>
+            <section class="contact section" id="contact">
+                <h2 class="section-title"><span>C</span>ontact</h2>
+                <form class="contact__form" action="https://formsubmit.co/marcin.garski@gmail.com" method="POST">
+                    <div class="contact__form--box">
+                        <label for="name">Your name:</label>
+                        <input type="text" id="name">
+                        <p class="form__error">Your Name cannot be empty</p>
+                    </div>
+
+                    <div class="contact__form--box">
+                        <label for="mail">Your email:</label>
+                        <input type="email" id="mail">
+                        <p class="form__error">Looks like this is not an email</p>
+                    </div>
+
+                    <div class="contact__form--box">
+                        <label for="msg">Message:</label>
+                        <textarea id="msg" cols="30" rows="10" placeholder="Your message"></textarea>
+                        <p class="form__error">Your message cannot be empty</p>
+                    </div>
+                    <button type="submit" class="contact__form--btn">Send</button>
+                    <p class="form__approve">Thanks for sending email</p>
+                </form>
+                <div class="contact__bottom">
+                    <img class="bottom__img" src="./img/contact.jpg" alt="Contact graphic">
+                    <p class="bottom__address"><i class="fa-solid fa-location-dot"></i>Garfield, NJ, United States</p>
+                    <p class="bottom__phone "><i class="fa-solid fa-phone"></i>+1 (973) 800 4853</p>
+                    <p class="bottom__email"><i class="fa-solid fa-envelope"></i>marcin.garski@gmail.com</p>
                 </div>
             </section>
         </main>
@@ -231,6 +259,7 @@
     <script src="https://kit.fontawesome.com/7b4480fb9a.js" crossorigin="anonymous"></script>
     <script src="./js/main.js"></script>
     <script src="./js/typed.js"></script>
+    <script src="./js/checkForm.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init({
