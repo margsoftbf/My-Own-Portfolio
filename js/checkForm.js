@@ -2,7 +2,7 @@ const username = document.querySelector('#name')
 const email = document.querySelector('#mail')
 const msg = document.querySelector('#msg')
 const btn = document.querySelector('.contact__form--btn')
-const approveEmail = document.querySelector('.approve__email')
+const approveEmail = document.querySelector('.form__approve')
 
 
 const showError = input => {
@@ -27,6 +27,7 @@ const checkMail = email => {
 
     if (re.test(email.value)) {
         clearError(email)
+        approveEmail.classList.add('activeApprove')
     } else {
         showError(email)
     }
