@@ -66,4 +66,14 @@
 			margin: 0 1em;
 		}
 	}
+
+	.portfolio {
+
+		&__upper {
+			&--img {
+				max-width: 400px;
+				max-height: 400px;
+			}
+		}
+	}
 }

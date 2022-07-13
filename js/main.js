@@ -1,5 +1,5 @@
 const sections = document.querySelectorAll('.section');
-const navItems = document.querySelectorAll('.nav-item');
+const navItems = document.querySelectorAll('.nav-item-desc');
 
 navItems.forEach(navItem => {
     navItem.addEventListener('click', function (e) {
